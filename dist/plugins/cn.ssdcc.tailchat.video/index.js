@@ -1372,27 +1372,27 @@ definePlugin('@plugins/cn.ssdcc.tailchat.video', ['exports', '@capital/common', 
 	    if (url !== null && url !== "") {
 	      url = url.replace("[card type=file url=", "");
 	      url = String(url).replace("{BACKEND}", common.getServiceUrl());
-      if (ishidden) {
-        return /* @__PURE__ */ React__default["default"].createElement("div", {
-          className: "max-w-full rounded-lg p-3 bg-gradient-to-br from-blue-50 to-purple-50 dark:from-gray-800 dark:to-gray-900 inline-flex overflow-hidden shadow-md hover:shadow-lg transition-shadow cursor-pointer",
-          onClick: handleClick,
-          style: { minWidth: 280 }
-        }, /* @__PURE__ */ React__default["default"].createElement(component.Icon, {
-          icon: "mdi:video-outline",
-          style: { fontSize: 48, color: "#6366f1" }
-        }), /* @__PURE__ */ React__default["default"].createElement("span", {
-          style: { marginLeft: 12, fontSize: 14, color: "#6b7280", alignSelf: "center" }
-        }, "\u70B9\u51FB\u64AD\u653E\u89C6\u9891"));
-      } else {
-        return /* @__PURE__ */ React__default["default"].createElement("div", {
-          className: "max-w-full rounded-lg p-3 bg-black bg-opacity-5 dark:bg-black dark:bg-opacity-10 inline-flex overflow-hidden shadow-md"
-        }, /* @__PURE__ */ React__default["default"].createElement("video", {
-          src: url,
-          controls: true,
-          autoPlay: false,
-          style: { maxHeight: 480, maxWidth: 640, borderRadius: 8 }
-        }));
-      }
+	      if (ishidden) {
+	        return /* @__PURE__ */ React__default["default"].createElement("div", {
+	          className: "max-w-full rounded-lg p-3 bg-gradient-to-br from-blue-50 to-purple-50 dark:from-gray-800 dark:to-gray-900 inline-flex overflow-hidden shadow-md hover:shadow-lg transition-shadow cursor-pointer",
+	          onClick: handleClick,
+	          style: { minWidth: 280 }
+	        }, /* @__PURE__ */ React__default["default"].createElement(component.Icon, {
+	          icon: "mdi:video-outline",
+	          style: { fontSize: 48, color: "#6366f1" }
+	        }), /* @__PURE__ */ React__default["default"].createElement("span", {
+	          style: { marginLeft: 12, fontSize: 14, color: "#6b7280", alignSelf: "center" }
+	        }, "\u70B9\u51FB\u64AD\u653E\u89C6\u9891"));
+	      } else {
+	        return /* @__PURE__ */ React__default["default"].createElement("div", {
+	          className: "max-w-full rounded-lg p-3 bg-black bg-opacity-5 dark:bg-black dark:bg-opacity-10 inline-flex overflow-hidden shadow-md"
+	        }, /* @__PURE__ */ React__default["default"].createElement("video", {
+	          src: url,
+	          controls: true,
+	          autoPlay: false,
+	          style: { maxHeight: 480, maxWidth: 640, borderRadius: 8 }
+	        }));
+	      }
 	    }
 	    return;
 	  }
@@ -1488,81 +1488,81 @@ definePlugin('@plugins/cn.ssdcc.tailchat.video', ['exports', '@capital/common', 
 	    a.target = "_blank";
 	    a.click();
 	  };
-  if (ishidden) {
-    return /* @__PURE__ */ React__default["default"].createElement("div", {
-      className: "max-w-full border border-gray-200 dark:border-gray-700 rounded-lg p-3 bg-gradient-to-br from-white to-gray-50 dark:from-gray-800 dark:to-gray-900 inline-flex overflow-hidden shadow-lg hover:shadow-xl transition-all",
-      style: { minWidth: 320 }
-    }, /* @__PURE__ */ React__default["default"].createElement("div", null, /* @__PURE__ */ React__default["default"].createElement("div", {
-      className: "inline-flex items-center justify-between mb-2",
-      style: { width: "100%" }
-    }, /* @__PURE__ */ React__default["default"].createElement("span", {
-      style: { fontSize: 14, fontWeight: 600, color: "#374151", maxWidth: 320, overflow: "hidden", textOverflow: "ellipsis", whiteSpace: "nowrap" }
-    }, payload.label), /* @__PURE__ */ React__default["default"].createElement("div", {
-      className: "flex text-lg items-center ml-2 cursor-pointer hover:text-blue-600 transition-colors",
-      onClick: downloadUrl
-    }, /* @__PURE__ */ React__default["default"].createElement(component.Icon, {
-      icon: "mdi:download",
-      style: { fontSize: 20 }
-    }))), /* @__PURE__ */ React__default["default"].createElement("div", {
-      style: { position: "relative", cursor: "pointer" },
-      onClick: handleClick
-    }, /* @__PURE__ */ React__default["default"].createElement("img", {
-      src: payload.imgSrc,
-      style: { height: 360, width: 480, borderRadius: 8, objectFit: "cover" }
-    }), /* @__PURE__ */ React__default["default"].createElement("div", {
-      style: { position: "absolute", top: "50%", left: "50%", transform: "translate(-50%, -50%)", width: 80, height: 80, borderRadius: "50%", backgroundColor: "rgba(99, 102, 241, 0.9)", display: "flex", alignItems: "center", justifyContent: "center", transition: "all 0.3s", boxShadow: "0 4px 20px rgba(0,0,0,0.3)" }
-    }, /* @__PURE__ */ React__default["default"].createElement(component.Icon, {
-      icon: "ph:play-fill",
-      style: { fontSize: 40, color: "white", marginLeft: 6 }
-    })))));
-  } else if (isload) {
-    return /* @__PURE__ */ React__default["default"].createElement("div", {
-      className: "max-w-full border border-gray-200 dark:border-gray-700 rounded-lg p-3 bg-gradient-to-br from-white to-gray-50 dark:from-gray-800 dark:to-gray-900 inline-flex overflow-hidden shadow-lg",
-      style: { minWidth: 320 }
-    }, /* @__PURE__ */ React__default["default"].createElement("div", null, /* @__PURE__ */ React__default["default"].createElement("div", {
-      className: "inline-flex items-center justify-between mb-2",
-      style: { width: "100%" }
-    }, /* @__PURE__ */ React__default["default"].createElement("span", {
-      style: { fontSize: 14, fontWeight: 600, color: "#374151", maxWidth: 320, overflow: "hidden", textOverflow: "ellipsis", whiteSpace: "nowrap" }
-    }, payload.label), /* @__PURE__ */ React__default["default"].createElement("div", {
-      className: "flex text-lg items-center ml-2 cursor-pointer hover:text-blue-600 transition-colors",
-      onClick: downloadUrl
-    }, /* @__PURE__ */ React__default["default"].createElement(component.Icon, {
-      icon: "mdi:download",
-      style: { fontSize: 20 }
-    }))), /* @__PURE__ */ React__default["default"].createElement("div", {
-      style: { position: "relative" }
-    }, /* @__PURE__ */ React__default["default"].createElement("img", {
-      src: payload.imgSrc,
-      style: { height: 360, width: 480, borderRadius: 8, objectFit: "cover", filter: "brightness(0.7)" }
-    }), /* @__PURE__ */ React__default["default"].createElement("div", {
-      style: { position: "absolute", top: "50%", left: "50%", transform: "translate(-50%, -50%)", textAlign: "center", color: "white", fontSize: 18, fontWeight: 600, backgroundColor: "rgba(0, 0, 0, 0.6)", padding: "12px 24px", borderRadius: 8 }
-    }, /* @__PURE__ */ React__default["default"].createElement("div", null, "\u52A0\u8F7D\u4E2D..."), /* @__PURE__ */ React__default["default"].createElement("div", {
-      style: { fontSize: 14, marginTop: 8 }
-    }, loaded)))));
-  } else {
-    return /* @__PURE__ */ React__default["default"].createElement("div", {
-      className: "max-w-full border border-gray-200 dark:border-gray-700 rounded-lg p-3 bg-gradient-to-br from-white to-gray-50 dark:from-gray-800 dark:to-gray-900 inline-flex overflow-hidden shadow-lg",
-      style: { minWidth: 320 }
-    }, /* @__PURE__ */ React__default["default"].createElement("div", null, /* @__PURE__ */ React__default["default"].createElement("div", {
-      className: "inline-flex items-center justify-between mb-2",
-      style: { width: "100%" }
-    }, /* @__PURE__ */ React__default["default"].createElement("span", {
-      style: { fontSize: 14, fontWeight: 600, color: "#374151", maxWidth: 320, overflow: "hidden", textOverflow: "ellipsis", whiteSpace: "nowrap" }
-    }, payload.label), /* @__PURE__ */ React__default["default"].createElement("div", {
-      className: "flex text-lg items-center ml-2 cursor-pointer hover:text-blue-600 transition-colors",
-      onClick: downloadUrl
-    }, /* @__PURE__ */ React__default["default"].createElement(component.Icon, {
-      icon: "mdi:download",
-      style: { fontSize: 20 }
-    }))), /* @__PURE__ */ React__default["default"].createElement("video", {
-      src: url,
-      controls: true,
-      autoPlay: true,
-      style: { maxHeight: 480, maxWidth: 640, borderRadius: 8 },
-      onError: videoerror
-    })));
-  }
+	  if (ishidden) {
+	    return /* @__PURE__ */ React__default["default"].createElement("div", {
+	      className: "max-w-full border border-gray-200 dark:border-gray-700 rounded-lg p-3 bg-gradient-to-br from-white to-gray-50 dark:from-gray-800 dark:to-gray-900 inline-flex overflow-hidden shadow-lg hover:shadow-xl transition-all",
+	      style: { minWidth: 320 }
+	    }, /* @__PURE__ */ React__default["default"].createElement("div", null, /* @__PURE__ */ React__default["default"].createElement("div", {
+	      className: "inline-flex items-center justify-between mb-2",
+	      style: { width: "100%" }
+	    }, /* @__PURE__ */ React__default["default"].createElement("span", {
+	      style: { fontSize: 14, fontWeight: 600, color: "#374151", maxWidth: 320, overflow: "hidden", textOverflow: "ellipsis", whiteSpace: "nowrap" }
+	    }, payload.label), /* @__PURE__ */ React__default["default"].createElement("div", {
+	      className: "flex text-lg items-center ml-2 cursor-pointer hover:text-blue-600 transition-colors",
+	      onClick: downloadUrl
+	    }, /* @__PURE__ */ React__default["default"].createElement(component.Icon, {
+	      icon: "mdi:download",
+	      style: { fontSize: 20 }
+	    }))), /* @__PURE__ */ React__default["default"].createElement("div", {
+	      style: { position: "relative", cursor: "pointer" },
+	      onClick: handleClick
+	    }, /* @__PURE__ */ React__default["default"].createElement("img", {
+	      src: payload.imgSrc,
+	      style: { height: 360, width: 480, borderRadius: 8, objectFit: "cover" }
+	    }), /* @__PURE__ */ React__default["default"].createElement("div", {
+	      style: { position: "absolute", top: "50%", left: "50%", transform: "translate(-50%, -50%)", width: 80, height: 80, borderRadius: "50%", backgroundColor: "rgba(99, 102, 241, 0.9)", display: "flex", alignItems: "center", justifyContent: "center", transition: "all 0.3s", boxShadow: "0 4px 20px rgba(0,0,0,0.3)" }
+	    }, /* @__PURE__ */ React__default["default"].createElement(component.Icon, {
+	      icon: "ph:play-fill",
+	      style: { fontSize: 40, color: "white", marginLeft: 6 }
+	    })))));
+	  } else if (isload) {
+	    return /* @__PURE__ */ React__default["default"].createElement("div", {
+	      className: "max-w-full border border-gray-200 dark:border-gray-700 rounded-lg p-3 bg-gradient-to-br from-white to-gray-50 dark:from-gray-800 dark:to-gray-900 inline-flex overflow-hidden shadow-lg",
+	      style: { minWidth: 320 }
+	    }, /* @__PURE__ */ React__default["default"].createElement("div", null, /* @__PURE__ */ React__default["default"].createElement("div", {
+	      className: "inline-flex items-center justify-between mb-2",
+	      style: { width: "100%" }
+	    }, /* @__PURE__ */ React__default["default"].createElement("span", {
+	      style: { fontSize: 14, fontWeight: 600, color: "#374151", maxWidth: 320, overflow: "hidden", textOverflow: "ellipsis", whiteSpace: "nowrap" }
+	    }, payload.label), /* @__PURE__ */ React__default["default"].createElement("div", {
+	      className: "flex text-lg items-center ml-2 cursor-pointer hover:text-blue-600 transition-colors",
+	      onClick: downloadUrl
+	    }, /* @__PURE__ */ React__default["default"].createElement(component.Icon, {
+	      icon: "mdi:download",
+	      style: { fontSize: 20 }
+	    }))), /* @__PURE__ */ React__default["default"].createElement("div", {
+	      style: { position: "relative" }
+	    }, /* @__PURE__ */ React__default["default"].createElement("img", {
+	      src: payload.imgSrc,
+	      style: { height: 360, width: 480, borderRadius: 8, objectFit: "cover", filter: "brightness(0.7)" }
+	    }), /* @__PURE__ */ React__default["default"].createElement("div", {
+	      style: { position: "absolute", top: "50%", left: "50%", transform: "translate(-50%, -50%)", textAlign: "center", color: "white", fontSize: 18, fontWeight: 600, backgroundColor: "rgba(0, 0, 0, 0.6)", padding: "12px 24px", borderRadius: 8 }
+	    }, /* @__PURE__ */ React__default["default"].createElement("div", null, "\u52A0\u8F7D\u4E2D..."), /* @__PURE__ */ React__default["default"].createElement("div", {
+	      style: { fontSize: 14, marginTop: 8 }
+	    }, loaded)))));
+	  } else {
+	    return /* @__PURE__ */ React__default["default"].createElement("div", {
+	      className: "max-w-full border border-gray-200 dark:border-gray-700 rounded-lg p-3 bg-gradient-to-br from-white to-gray-50 dark:from-gray-800 dark:to-gray-900 inline-flex overflow-hidden shadow-lg",
+	      style: { minWidth: 320 }
+	    }, /* @__PURE__ */ React__default["default"].createElement("div", null, /* @__PURE__ */ React__default["default"].createElement("div", {
+	      className: "inline-flex items-center justify-between mb-2",
+	      style: { width: "100%" }
+	    }, /* @__PURE__ */ React__default["default"].createElement("span", {
+	      style: { fontSize: 14, fontWeight: 600, color: "#374151", maxWidth: 320, overflow: "hidden", textOverflow: "ellipsis", whiteSpace: "nowrap" }
+	    }, payload.label), /* @__PURE__ */ React__default["default"].createElement("div", {
+	      className: "flex text-lg items-center ml-2 cursor-pointer hover:text-blue-600 transition-colors",
+	      onClick: downloadUrl
+	    }, /* @__PURE__ */ React__default["default"].createElement(component.Icon, {
+	      icon: "mdi:download",
+	      style: { fontSize: 20 }
+	    }))), /* @__PURE__ */ React__default["default"].createElement("video", {
+	      src: url,
+	      controls: true,
+	      autoPlay: true,
+	      style: { maxHeight: 480, maxWidth: 640, borderRadius: 8 },
+	      onError: videoerror
+	    })));
+	  }
 	});
 	common.regChatInputAction({
 	  label: "\u53D1\u9001\u89C6\u9891",
