@@ -1386,7 +1386,7 @@ definePlugin('@plugins/cn.ssdcc.tailchat.video', ['exports', '@capital/common', 
                         src: url,
                         controls: true,
                         autoPlay: false,
-                        style: { maxHeight: 480, maxWidth: 640 }
+                        style: { maxHeight: 250, maxWidth: 250 }
                     }));
                 }
             }
@@ -1498,11 +1498,11 @@ definePlugin('@plugins/cn.ssdcc.tailchat.video', ['exports', '@capital/common', 
                 className: "ml-1"
             }, "\u4E0B\u8F7D"))), /* @__PURE__ */ React__default["default"].createElement("div", null, /* @__PURE__ */ React__default["default"].createElement("img", {
                 src: payload.imgSrc,
-                style: { height: 320, width: 480 }
+                style: { height: 400, width: 300 }
             }), /* @__PURE__ */ React__default["default"].createElement(component.Icon, {
                 icon: "ph:play-bold",
                 onClick: handleClick,
-                style: { position: "absolute", top: 120, left: 180, width: 120, height: 120 }
+                style: { position: "absolute", top: 180, left: 100, width: 100, height: 100 }
             }))));
         } else if (isload) {
             return /* @__PURE__ */ React__default["default"].createElement("div", {
@@ -1518,9 +1518,9 @@ definePlugin('@plugins/cn.ssdcc.tailchat.video', ['exports', '@capital/common', 
                 className: "ml-1"
             }, "\u4E0B\u8F7D"))), /* @__PURE__ */ React__default["default"].createElement("div", null, /* @__PURE__ */ React__default["default"].createElement("img", {
                 src: payload.imgSrc,
-                style: { height: 320, width: 480 }
+                style: { height: 400, width: 300 }
             }), /* @__PURE__ */ React__default["default"].createElement("div", {
-                style: { position: "absolute", top: 150, left: 8, width: 480, height: 10, textAlign: "center", fontSize: 20 }
+                style: { position: "absolute", top: 200, left: 8, width: 300, height: 10, textAlign: "center", fontSize: 20 }
             }, loaded))));
         } else {
             return /* @__PURE__ */ React__default["default"].createElement("div", {
@@ -1538,7 +1538,7 @@ definePlugin('@plugins/cn.ssdcc.tailchat.video', ['exports', '@capital/common', 
                 src: url,
                 controls: true,
                 autoPlay: true,
-                style: { maxHeight: 480, maxWidth: 640 },
+                style: { maxHeight: 500, maxWidth: 250 },
                 onError: videoerror
             })));
         }
